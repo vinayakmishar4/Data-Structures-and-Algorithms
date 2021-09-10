@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   int sell;
+   int cost;
+
+  if(cost<sell)
+  {
+
+     cin>>cost>>sell; 
+     cout<<"Profit is :-"<<sell-cost<<endl;
+    
+  } 
+  return 0;
+
+}
