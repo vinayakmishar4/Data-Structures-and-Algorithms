@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+double taylor(int x,int y)
+{
+  static double num=1,den=1;
+  double series;
+
+  if(y==0)
+  {
+
+    return 1;
+    
+  }
+
+  else
+
+  {
+
+   series=taylor(x,y-1);
+   num*=x;
+   den*=y;
+
+   return series + num/den;
+
+  }
+
+}
+
+int main()
+{
+
+int x,y;
+cin>>x>>y;
+cout<<taylor(x,y)<<endl;
+return 0;
+
+
+}
