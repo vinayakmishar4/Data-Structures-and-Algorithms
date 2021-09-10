@@ -1,0 +1,28 @@
+using namespace std;
+
+int main()
+{
+   int a,b,x,t,y,lcm,hcf;
+   
+   cout<<"enter two number"<<endl;
+   cin>>x>>y;
+
+   a=x;
+   b=y;
+
+   while(b !=0)
+   {
+
+     t=b;
+     b=a %b;
+     a=t;
+
+   } 
+
+   hcf=a;
+   lcm=(x*y)/hcf;
+
+   cout<<"H.C.F"<<endl<<x<<endl<<y<<endl<<hcf<<endl;
+   cout<<"L.C.M"<<endl<<x<<endl<<y<<endl<<lcm<<endl;
+
+}
