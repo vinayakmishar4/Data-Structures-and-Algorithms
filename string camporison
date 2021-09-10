@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+
+    string str="Hello C++";
+   
+    
+    for(int i=0; str[i]!='\0';i++){
+        if(str[i]>='a' && str[i]<='z'){
+            str[i]=str[i]-'a'+'A';
+        }
+    }
+   cout<<str<<endl;
+   string str2="Hello C++ i am  a GAMER";
+   int ward=1;
+   for(int i=0; str2[i]!='\0';i++){
+       if(str2[i]==' '){
+           ward++;
+       }
+   }
+   cout<<ward<<endl;
+   
+   
+   string str3="Hello   world i  am  a gamer";
+   int alpha=1;
+   for(int i=0; str3[i]!='\0';i++){
+       if(str3[i]==' '){
+           alpha++;
+       }
+   }
+   cout<<alpha<<endl;
+    return 0;
+}
