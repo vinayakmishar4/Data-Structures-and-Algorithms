@@ -1,0 +1,23 @@
+  #include <iostream>
+using namespace std;
+
+int main()
+{
+
+   int x;
+   int number;
+   int fact=1;
+
+   cout<<"enter the number"<<endl;
+   cin>>number;
+
+   for(int x=1;x<=number;x++)
+   {
+
+     fact=fact*x;
+
+   }
+
+   cout<<"the factorial of number "<<number<<endl<<fact<<endl;
+   cin>>number;
+}
