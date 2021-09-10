@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+ int fun(int n)
+{
+ 
+   if(n>0)
+   {
+
+      cout<<n;
+      fun(fun(n-1));
+      cout<<n;
+           
+
+   }
+
+ return n;  
+
+}
+
+int main()
+{
+   int num;
+   cout<<"enter the number"<<endl;
+   cin>>num;
+   fun(num);
+   
+
+
+
+
+}
